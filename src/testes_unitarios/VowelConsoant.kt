@@ -37,3 +37,8 @@ fun isConsoant(letter: Char) : Boolean
     val CONSOANTS = "bcdfghjklmnpqrstvwxyz"
     return letter.toLowerCase() in CONSOANTS
 }
+
+fun countVowelsFilter(str: String) : Int
+{
+    return str.filter { isVowels(it) }.count()
+}
